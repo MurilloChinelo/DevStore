@@ -13,7 +13,25 @@ const ContainerConteudo = styled.div`
     display: flex;
     flex-direction: row;
     
+    .usuario {
+        position: relative;
+    }
 
+    .bullet {
+        background-color: #EA10C7;    
+        color: #fff;
+        border-radius: 100%;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        font-size: 12px;
+        border: 3px solid #fff;
+
+        position: absolute;
+        top: -5px;
+        right: -5px;
+
+    }
 
     .container1 {
         background-color: #2B3031;
@@ -93,7 +111,6 @@ const ContainerConteudo = styled.div`
         align-items: center;
         background: rgba(255, 255, 255, 1);
 
-   
     }
 
     

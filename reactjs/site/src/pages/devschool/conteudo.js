@@ -1,6 +1,9 @@
+import { useState } from 'react'
 import { ContainerConteudo, Barra } from './conteudostyle'
 
 export default function Conteudo() {
+    const [alunos, setAlunos] = useState([])
+
     
     
     return (
@@ -23,7 +26,13 @@ export default function Conteudo() {
             </div>
             <div className="container2">
                 <div className="cabecalho">
-                    <div className="usuario-imagem">  <img src="/assents/images/neyy.jpg" alt="nao foi" /> <div className="mensagem-usu"> Olá, Ney lindo </div>   </div>
+                    <div className="usuario-imagem">  
+                        <div className="usuario">
+                            <img src="/assents/images/neyy.jpg" alt="nao foi" /> 
+                            <div className="bullet">3</div>
+                        </div>
+                        <div className="mensagem-usu"> Olá, Ney lindo </div>   
+                    </div>
                     <div className="contalunos">
                         <img className="recarregar" src="/assents/images/recarregar.png" alt="" />
                     </div>
