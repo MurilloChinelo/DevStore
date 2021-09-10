@@ -12,11 +12,17 @@ const Barra = styled.div`
 const ContainerConteudo = styled.div`
     display: flex;
     flex-direction: row;
+    width: 170vh;
+
+    font-family: 'Roboto', sans-serif;
     
     .usuario {
         position: relative;
     }
 
+    .lista-tb {
+        width: 145vh;
+    }
     .bullet {
         background-color: #EA10C7;    
         color: #fff;
@@ -34,12 +40,19 @@ const ContainerConteudo = styled.div`
     }
 
     .container1 {
+        display: flex;
+        flex-direction: column;
         background-color: #2B3031;
+
+        height: 100vh;
+        position: sticky;
+        top: 0px;
     }
 
     .container2 {
-        background: linear-gradient(0deg, #F5F5F5, #F5F5F5);
         width: 68em;
+        background: linear-gradient(0deg, #F5F5F5, #F5F5F5);
+        
     }
 
    
@@ -48,6 +61,7 @@ const ContainerConteudo = styled.div`
         flex-direction: row;
         padding: 2em 2em;
         align-items: center;
+        
     }
 
     .logo {
@@ -58,6 +72,7 @@ const ContainerConteudo = styled.div`
         padding-left: 0.5em;
         font-size: 1.5em;
         color: white;
+        font-weight: bold;
     }
     .titulo span {
         color: #EA10C7;
@@ -73,13 +88,14 @@ const ContainerConteudo = styled.div`
     .geren {
         display: flex;
         align-items: center;
-        width: 17em;
+        width: auto;
         height: 3em;
         padding: 2em;
         color: white;
+        
     }
     .setaprabaixo{
-        padding-left: 5.7em;
+        padding-left: 5em;
     }
 
     .alun {
@@ -105,6 +121,7 @@ const ContainerConteudo = styled.div`
     }
 
     .cabecalho {
+        width: 168vh;
         display: flex;
         flex-direction: row;
         padding: 1em 2em;
@@ -125,11 +142,12 @@ const ContainerConteudo = styled.div`
         flex-direction: row;
         align-items: center;
         
+        
     }
 
     .mensagem-usu {
         padding-left: 1em;
-        padding-right: 48em;
+        padding-right: 47em;
     }
 
     .contalunos {
@@ -167,6 +185,16 @@ const ContainerConteudo = styled.div`
         
     }
 
+    .titulo-alun{
+        font-weight: bold;
+        font-size: 2em;
+    }
+
+    .titulo-matri {
+        font-weight: bold;
+        font-size: 2em;
+    }
+
     .dados {
         display: flex;
         flex-direction: row;
@@ -183,7 +211,7 @@ const ContainerConteudo = styled.div`
         padding-left: 0em;
     }
     .chamada {
-        padding-left: 1.6em;
+        padding-left: 1.3em;
         margin-right: 4.7em;
     }
     .turma {
@@ -222,6 +250,56 @@ const ContainerConteudo = styled.div`
         background: rgba(255, 255, 255, 1);
         margin: 2em 2em;
         padding: 2em;
+    }
+
+    .idTb {
+        padding-left: 2.5em;
+    }
+    .idTb1 {
+        padding-left: 2em;
+    }
+    table {
+        border: 1px solid #E2E2E2;
+        border-collapse: collapse;
+    }
+    th {
+        height: 61.93px;
+        text-align: left;
+        color: #ffff;
+        
+        padding: 1em;    
+    }
+    td {
+        text-align: left;
+        height:  61.93px;
+        padding: 1em;
+        color: #6D6868;
+        
+    }
+    td button {
+        border-radius: 50%;
+        background-color: #565656;
+        border: none;
+        width: 31px;
+        height: 31px;
+        padding: 0em;
+    }
+    thead {
+        color: #fff;
+        background: #986CDF;
+    }
+    .linha-alternada {
+        background: #F5F5F5;
+    }
+    .botao-visivel > button {
+        visibility: hidden;
+    }
+    tr:hover {
+        
+        .botao-visivel > button {
+            visibility: visible;
+        }
+        
     }
 `
 
