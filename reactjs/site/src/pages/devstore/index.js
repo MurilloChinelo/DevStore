@@ -3,7 +3,7 @@ import Conteudo from './conteudo'
 
 
 
-export default function Devschool() {
+export default function DevStore() {
     return (
         <Container>
             <Conteudo />

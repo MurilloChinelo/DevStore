@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Barra = styled.div`
-    background: rgba(152, 108, 223, 1);
+    background: rgba(17, 159, 220, 1);
     width: 4px;
     height: 2em;
     margin: 0em 1em;
@@ -24,7 +24,8 @@ const ContainerConteudo = styled.div`
         width: 145vh;
     }
     .bullet {
-        background-color: #EA10C7;    
+        background: rgba(17, 159, 220, 1);
+ 
         color: #fff;
         border-radius: 100%;
         width: 20px;
@@ -65,7 +66,7 @@ const ContainerConteudo = styled.div`
     }
 
     .logo {
-        
+        width: 2em;
     }
 
     .titulo {
@@ -75,7 +76,7 @@ const ContainerConteudo = styled.div`
         font-weight: bold;
     }
     .titulo span {
-        color: #EA10C7;
+        color: rgba(16, 234, 234, 1);
         margin-right: -5px;
     }
 
@@ -115,7 +116,7 @@ const ContainerConteudo = styled.div`
         background: rgba(255, 255, 255, 1);
     }
     .barra1roxo {
-        background: rgba(219, 33, 189, 1);
+        background: rgba(16, 234, 234, 1);
         width: 0.2em;
         height: 4em;
     }
@@ -152,7 +153,7 @@ const ContainerConteudo = styled.div`
 
     .contalunos {
         align-items: center;
-        background: rgba(152, 108, 223, 1);
+        background: rgba(17, 159, 220, 1);
         border-radius: 50%;
         align-items: center;
         width: 2.3em;
@@ -200,34 +201,142 @@ const ContainerConteudo = styled.div`
         flex-direction: row;
         flex-wrap: wrap;
         width: 40em;
-        height: 5em;
+        height: 20em;
     }
 
     .nome {
+        
         padding-left: 3em;
-        margin-right: 5em;
+        margin-right: 3em;
     }
-    .curso {
+    .prde {
         padding-left: 0em;
     }
-    .chamada {
-        padding-left: 1.3em;
-        margin-right: 4.7em;
+    .cat {
+        padding-left: 1.4em;
+        margin-right: 2em;
+        
     }
-    .turma {
+    .prpo {
         padding-left: 0.2em;
     }
-    .dados input {
+
+    .ava {
+        padding-left: 1.5em;
+        margin-right: 3.5em;
+       
+    }
+    .est {
+        padding-left: 0em;
+    }
+    .lm {
+        padding-left: 0.1em;
+        margin-right: 0em;
+        
+    }
+
+    .lm input {
+        border: 1px solid rgba(168, 168, 168, 1);
+        background: #FFFFFF;
+        border-radius: 5px;
+        
+        outline: none;
+        width: 76.5vh;
+        height: 6vh;
+
+        cursor: text;
+    }
+    .ds {
+        padding-top: 1em;
+        padding-left: 1.4em;
+        padding-right: 0.3em;
+    }
+
+    .dados textarea {
+        
+        border-radius: 5px;
+        border: 1px solid rgba(168, 168, 168, 1);
+        resize: none;
+        outline: none;
+        padding: 1em;
+        cursor: text;
+        width: 76.5vh;
+        height: 20vh;
+        
+
+    }
+
+
+    .nome input {
         border: 1px solid rgba(168, 168, 168, 1);
         background: #FFFFFF;
         border-radius: 5px;
 
         outline: none;
-        padding: .4em .5em;
+        width: 28.5vh;
+        height: 6vh;
 
         cursor: text;
     }
 
+    .prde input {
+        border: 1px solid rgba(168, 168, 168, 1);
+        background: #FFFFFF;
+        border-radius: 5px;
+
+        outline: none;
+        width: 28.5vh;
+        height: 6vh;
+
+        cursor: text;
+    }
+    .cat input {
+        border: 1px solid rgba(168, 168, 168, 1);
+        background: #FFFFFF;
+        border-radius: 5px;
+
+        outline: none;
+        width: 28.5vh;
+        height: 6vh;
+
+        cursor: text;
+    }
+    .prpo input {
+        border: 1px solid rgba(168, 168, 168, 1);
+        background: #FFFFFF;
+        border-radius: 5px;
+
+        outline: none;
+        width: 28.5vh;
+        height: 6vh;
+
+        cursor: text;
+    }
+
+    .ava input {
+        border: 1px solid rgba(168, 168, 168, 1);
+        background: #FFFFFF;
+        border-radius: 5px;
+
+        outline: none;
+        width: 28.5vh;
+        height: 6vh;
+
+        cursor: text;
+    }
+
+    .est input {
+        border: 1px solid rgba(168, 168, 168, 1);
+        background: #FFFFFF;
+        border-radius: 5px;
+
+        outline: none;
+        width: 28.5vh;
+        height: 6vh;
+
+        cursor: text;
+    }
+    
     .botao {
         padding-bottom: 0.5em;
         align-self: flex-end;
@@ -237,7 +346,8 @@ const ContainerConteudo = styled.div`
         font-weight: 700;
 
         color: #fff;
-        background: rgba(233, 17, 198, 1);
+        background: rgba(17, 159, 220, 1);
+
         border: none;
         border-radius: 20px;
         padding: .5em 2em;
@@ -250,10 +360,11 @@ const ContainerConteudo = styled.div`
         background: rgba(255, 255, 255, 1);
         margin: 2em 2em;
         padding: 2em;
+       
     }
 
     .idTb {
-        padding-left: 2.5em;
+        padding-left: 2em;
     }
     .idTb1 {
         padding-left: 2em;
@@ -272,7 +383,7 @@ const ContainerConteudo = styled.div`
     td {
         text-align: left;
         height:  61.93px;
-        padding: 1em;
+        padding: 0.5em;
         color: #6D6868;
         
     }
@@ -286,7 +397,8 @@ const ContainerConteudo = styled.div`
     }
     thead {
         color: #fff;
-        background: #986CDF;
+        background: rgba(108, 195, 223, 1);
+;
     }
     .linha-alternada {
         background: #F5F5F5;
