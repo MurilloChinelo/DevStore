@@ -113,7 +113,7 @@ export default function Conteudo() {
     return (
         <ContainerConteudo>
             <ToastContainer />
-            <LoadingBar color="red" ref={loading} />
+            <LoadingBar color="rgba(17, 159, 220, 1)" ref={loading} />
             <div className="container1">
                 <div className="sloga">
                     <img className="logo" src="/assents/images/logodevstore.jpg" alt="" />
