@@ -99,6 +99,32 @@ app.put('/produto/:id', async (req, resp) => {
     try {
         let id = req.params.id;
         let { nome, categoria, precode, precopor, avaliacao,  descricao, estoque, linkimagem } = req.body;
+
+        if(nome == '' || categoria == '' || precode == '' || precopor == '' || avaliacao == '' || descricao == '' || estoque == '' || linkimagem == '') {
+            return resp.send({ erro: 'Você Deve de Preencher os Campos' }) 
+        }
+        if(nome.length <= 4 || categoria.length <= 4 || descricao.length <= 4 || linkimagem.length <= 4) {
+            return resp.send({ erro: 'Coloque mais que 4 caracteres nos campos abaixo' })
+        }
+
+        if(!isNaN(precopor) == false) {
+            return resp.send({ erro: 'No campo Preço POR coloque apenas numeros!' })
+        }   
+
+        if(!isNaN(avaliacao) == false) {
+            return resp.send({ erro: 'No campo Avaliação coloque apenas numeros!' })
+        }
+
+        if(!isNaN(precode) == false)
+            return resp.send({ erro: 'No campo Preço DE coloque apenas numeros!' })
+
+        if( !isNaN(estoque) == false)
+            return resp.send({ erro: 'No campo estoque coloque apenas numeros!' })
+
+        if(avaliacao <= 0 || precopor <= 0 || precode <= 0 || estoque <= 0 )
+            return resp.send({ erro: 'Coloque um numero maior que 0' })
+
+            
         let r = await db.tb_produto.update (
             {
                 nm_produto: nome,
@@ -116,6 +142,10 @@ app.put('/produto/:id', async (req, resp) => {
                 where: { id_produto: id }
             }
         );
+
+        
+
+
         resp.sendStatus(200)
 
     }catch (e) {
