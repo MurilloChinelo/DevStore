@@ -54,24 +54,24 @@ app.post('/produto', async (req, resp) => {
         }
 
         if(!isNaN(precopor) == false) {
-            return resp.send({ erro: 'No campo Preço POR coloque apenas numeros!' })
+            return resp.send({ erro: 'No campo Preço POR coloque apenas números!' })
         }   
 
         if(!isNaN(avaliacao) == false) {
-            return resp.send({ erro: 'No campo Avaliação coloque apenas numeros!' })
+            return resp.send({ erro: 'No campo Avaliação coloque apenas números!' })
         }
 
         if(!isNaN(precode) == false)
-            return resp.send({ erro: 'No campo Preço DE coloque apenas numeros!' })
+            return resp.send({ erro: 'No campo Preço DE coloque apenas números!' })
 
         if( !isNaN(estoque) == false)
-            return resp.send({ erro: 'No campo estoque coloque apenas numeros!' })
+            return resp.send({ erro: 'No campo estoque coloque apenas números!' })
 
         if(avaliacao <= 0 || precopor <= 0 || precode <= 0 || estoque <= 0 )
-            return resp.send({ erro: 'Coloque um numero maior que 0' })
+            return resp.send({ erro: 'Coloque um número maior que 0' })
         
          if(p != null ){
-                return resp.send({ erro: 'Produto ja cadastrado' })
+                return resp.send({ erro: 'Produto já cadastrado!' })
         }
         
         
