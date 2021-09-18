@@ -36,7 +36,7 @@ export default function Conteudo() {
     }
 
     async function inserir() {
-        if (idAlterando == 0) {
+        if (idAlterando === 0) {
             let r = await api.inserir( nome, categoria, precode, precopor, avaliacao,  descricao, estoque, linkimagem)
 
             if (r.erro)
@@ -134,10 +134,10 @@ export default function Conteudo() {
                 <div className="cabecalho">
                     <div className="usuario-imagem">  
                         <div className="usuario">
-                            <img src="/assents/images/neyy.jpg" alt="nao foi" /> 
-                            <div className="bullet">3</div>
+                            <img src="https://havaianas.com.br/on/demandware.static/-/Sites-havaianas-master/default/dw05aa76bc/product-images/4001280_0031_HAVAIANAS%20TRADICIONAL_C.png" alt="nao foi" /> 
+                            <div className="bullet">6</div>
                         </div>
-                        <div className="mensagem-usu"> Olá, Ney lindo </div>   
+                        <div className="mensagem-usu"> Olá, Chinelito </div>   
                     </div>
                     <div className="contalunos">
                         <img className="recarregar" src="/assents/images/recarregar.png" alt="" />
@@ -149,7 +149,7 @@ export default function Conteudo() {
                 <div className="cadrastro">
                     <div className="cab"> 
                     <Barra/>
-                    <div className="titulo-alun"> {idAlterando == 0 ? "Novo Produto" : "Alterando Produto " + idAlterando}</div>
+                    <div className="titulo-alun"> {idAlterando === 0 ? "Novo Produto" : "Alterando Produto " + idAlterando}</div>
                     </div>
                     <div className="cxinputs">
                         <div className="dados">
@@ -163,7 +163,7 @@ export default function Conteudo() {
                             <div className="ds"> Descrição: </div>
                             <textarea type="text" value={descricao} onChange={e => setDescricao(e.target.value)} />  
                         </div>
-                        <div className="botao"> <button onClick={inserir}> {idAlterando == 0 ? "Cadastrar" : "Alterar"} </button> </div>
+                        <div className="botao"> <button onClick={inserir}> {idAlterando === 0 ? "Cadastrar" : "Alterar"} </button> </div>
                     </div>
                 </div> 
                 <div className="listaalunos">
